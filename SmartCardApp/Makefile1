@@ -1,0 +1,35 @@
+hw4: main.o secret1.o sign.o verify.o enc.o dec.o edit.o
+	gcc secret1.o main.o sign.o verify.o enc.o dec.o edit.o -I/home/scf-22/csci551b/openssl/include -L/home/scf-22/csci551b/openssl/lib -lsocket -lnsl -ldl -lcrypto -o hw4
+
+edit.o: edit.c header.h
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include edit.c
+
+enc.o: enc.c header.h
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include enc.c
+
+dec.o: dec.c header.h
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include dec.c
+
+verify.o: verify.c header.h
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include verify.c
+
+sign.o: sign.c header.h 
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include sign.c
+
+secret1.o: secret1.c header.h
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include secret1.c 
+
+main.o: main.c header.h
+	gcc -c -g -Wall -I/home/scf-22/csci551b/openssl/include main.c
+
+smartcard: smartcard.o
+        gcc smartcard.o -lc -L/home/scf-22/csci551b/openssl/lib -lsocket -lcrypto -ldl -I/home/scf-22/csci551b/openssl/include -o smartcard
+
+smartcard.o: defs.h scintrf.h secret.h secret.c smartcard.c 
+	gcc -g -Wall $(EXTRA_INCLUDES) -c -o smartcard.o smartcard.c
+
+clean:
+rm -f *.o *.so hw4
+
+
+

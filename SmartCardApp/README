@@ -1,0 +1,15 @@
+Following files are submitted:
+
+1) Makefile
+2) secret1.c
+3) sign.c
+4) verify.c
+5) enc.c
+6) dec.c
+7) smartcard.c
+8) header.h
+9) defs.h
+10)scintrf.h
+11)secret.h
+
+I have not implemented EDIT program, so please do not run the edit command and its respective error commands
