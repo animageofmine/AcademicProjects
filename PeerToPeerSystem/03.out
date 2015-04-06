@@ -1,0 +1,17 @@
+V -t * -v 1.0a5
+n -t * -s 13179 -c red -i black
+n -t * -s 13177 -c red -i black
+n -t * -s 13176 -c red -i black
+n -t * -s 13178 -c red -i black
+l -t * -s 13177 -d 13176 -c blue
+l -t * -s 13177 -d 13178 -c blue
+l -t * -s 13177 -d 13179 -c blue
+l -t * -s 13176 -d 13177 -c blue
+l -t * -s 13176 -d 13178 -c blue
+l -t * -s 13176 -d 13179 -c blue
+l -t * -s 13178 -d 13176 -c blue
+l -t * -s 13178 -d 13177 -c blue
+l -t * -s 13178 -d 13179 -c blue
+l -t * -s 13179 -d 13177 -c blue
+l -t * -s 13179 -d 13176 -c blue
+l -t * -s 13179 -d 13178 -c blue

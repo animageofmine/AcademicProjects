@@ -1,0 +1,66 @@
+Peer to Peer file sharing system
+	
+The chief objective of the project is to create a peer to peer system where all the nodes of the network can share data between them. The following files were used in this project
+****************
+Files Submitted:
+****************
+CC FILES
+1) sv_node.cc 
+This file has the functionality to receive all the messages and send the messages. It has functionality to write to the log file too.  
+2) commandLine.cc
+This file is the client part of the program which accepts input from the user
+3) file.cc
+this file has functions to write to the log file
+4) hello.cc
+This file has the functionality to parse the hello message
+5) iniparser.c
+This file parses the *.ini file submitted by the user
+6) linklist_beacons.cc
+This file creates a linked list which contains all the ini parameters
+7) message_cache.cc
+This file has functionality for the message cache
+8) message_header.cc
+This file creates and parses the header of each message
+9) neighbor_list.cc
+This file creates a linked list of all the neighbors of a non beacon node 
+10) socket_list.cc
+This file has the functionality to implement a linked list and contains data of all the connections related to a particular node
+11) timer.cc
+This file has the functionality to send keep alive message to all the neighbor nodes and checks whether a neighbor node is sending keep alive message on time
+
+HEADER FILES
+
+1) file.h
+Class defined to implement the functionality if log file
+2) hello.h
+Contains a class to which has functions to parse a hello message
+3) iniparser.h
+Functionality to parse the ini file
+4) linklist_beacons.h
+Functionality to implement a linked list for all the data of the ini file. 
+5) message_cache.h
+Implements the functionality to create a message cache for all the messages received by a node
+6) message_header.h
+Contains a class to parse the message header
+7) neighbor_list.h
+Contains a class to build a list of all the neighbors
+8) socket_list.h
+Contains a class to make a list of neighbor nodes and all the data of the neighbor node
+9)timer.h
+Contains function declaration to support the timer
+
+Makefile
+
+Temporary Files : A file named beacons_stored is created while parsing the ini file.
+
+Compilation : To compile the project please type the following on the command prompt
+
+make
+
+To execute the project ,please type  
+
+sv_node -reset name-of-ini-file
+
+-reset s optional
+
+

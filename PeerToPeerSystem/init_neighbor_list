@@ -1,0 +1,15 @@
+[neighbor1]
+portno=13176
+hostname=nunki.usc.edu
+[neighbor2]
+portno=13177
+hostname=nunki.usc.edu
+[neighbor3]
+portno=13178
+hostnmae=nunki.usc.edu
+[neighbor4]
+portno=13179
+hostname=nunki.usc.edu
+[neighbor5]
+portno=13180
+hostname=nunki.usc.edu
